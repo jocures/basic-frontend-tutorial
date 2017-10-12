@@ -1,21 +1,21 @@
 <html lang="en">
-  <head></head>
+  <head>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
   <body>
-    <!-- We're using a <header> tag here for the header of our app. This tag
-      doesn't provide any specific styling to its contents. However, like
-      heading tags (ex. <h1>), it does communicate a level of significance to
-      search engines. -->
     <header>
       <h1>To-dos</h1>
     </header>
-    <!-- We're using another <div> tag here as a container for our to-do items.
-      Right now, this won't look like much, but this is an example of parenting.
-      Any styling (which we will do later) that we apply to the parent container
-      (class="todo-list") will have an impact on all of the children
-      (class="todo-item"). -->
     <div class="todo-list">
-      <div class="todo-item">
-        <input type="checkbox" />
+      <!-- We've added the class "completed" to the todo-item container. This
+        allows us to style the child components easily. Check out style.css to
+        see how. -->
+      <div class="todo-item completed">
+        <!-- We've added the checked attribute to this checkbox. Unlike some
+          attributes, this one doesn't require us to specify a value. It's a
+          boolean (like we have in JavaScript) so it's presense denotes the
+          value "true". -->
+        <input type="checkbox" checked>
         <span>Build a to-do item</span>
       </div>
       <div class="todo-item">
