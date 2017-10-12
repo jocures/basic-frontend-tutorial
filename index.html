@@ -1,27 +1,30 @@
 <html lang="en">
   <head></head>
   <body>
-    <!-- <div> tags are used as containers for any content. They don't infer
-      any meaning about their contents, only creating structure.
-    
-      We've added a class attribute named "todo-item". Currently, this won't
-      do anything for us, since we haven't declared anything about the class.-->
-    <div class="todo-item">
-      <!-- This is an <input> tag. These provide different ways for users to
-        interact with a page besides just scrolling and reading.
-
-        This tag has the type "checkbox". That creates a small box that you can
-        toggle on and off. Input tags are an example of self-closing tags. These
-        do not need a matching closing tag, like <body> or <div> do. -->
-      <input type="checkbox" />
-      <!-- <span> tags are used similarly to <div> tags, they add structure to
-        a page. A notable difference between <div> and <span> is that <div>
-        tags are block-level elements, while <span> tags are inline elements.
-
-        What this means is that <div> tags will stack vertically by default,
-        but <span> tags will be rendered in a line until there is no more
-        space. -->
-      <span>Build a to-do item</span>
-    </div>
+    <!-- We're using a <header> tag here for the header of our app. This tag
+      doesn't provide any specific styling to its contents. However, like
+      heading tags (ex. <h1>), it does communicate a level of significance to
+      search engines. -->
+    <header>
+      <h1>To-dos</h1>
+    </header>
+    <!-- We're using another <div> tag here as a container for our to-do items.
+      Right now, this won't look like much, but this is an example of parenting.
+      Any styling (which we will do later) that we apply to the parent container
+      (class="todo-list") will have an impact on all of the children
+      (class="todo-item"). -->
+    <div class="todo-list">
+      <div class="todo-item">
+        <input type="checkbox" />
+        <span>Build a to-do item</span>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" />
+        <span>Add another item.</span>
+      </div>
+      <div class="todo-item">
+        <input type="checkbox" />
+        <span>Rule of three</span>
+      </div>
   </body>
 </html>
