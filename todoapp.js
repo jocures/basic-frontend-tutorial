@@ -5,7 +5,6 @@
       todo.classList.toggle("completed");
       var [checkbox, text] = todo.children;
       checkbox.checked = !checkbox.checked;
-      text.classList.toggle("completed", todo.classList.contains("completed"));
     })
   });
 })();

@@ -2,7 +2,7 @@
   cursor: pointer;
 }
 
-.todo-item > span.completed {
+.todo-item.completed > span {
   text-decoration: line-through;
 }
 
