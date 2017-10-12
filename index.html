@@ -7,15 +7,8 @@
       <h1>To-dos</h1>
     </header>
     <div class="todo-list">
-      <!-- We've added the class "completed" to the todo-item container. This
-        allows us to style the child components easily. Check out style.css to
-        see how. -->
-      <div class="todo-item completed">
-        <!-- We've added the checked attribute to this checkbox. Unlike some
-          attributes, this one doesn't require us to specify a value. It's a
-          boolean (like we have in JavaScript) so it's presense denotes the
-          value "true". -->
-        <input type="checkbox" checked>
+      <div class="todo-item">
+        <input type="checkbox">
         <span>Build a to-do item</span>
       </div>
       <div class="todo-item">
@@ -27,4 +20,13 @@
         <span>Rule of three</span>
       </div>
   </body>
+  <!-- We've added a script tag. This lets us load JavaScript into the page.
+    You can put this anywhere in the page. Where it goes affects when it is
+    loaded. It's not uncommon to see <script> tags in the <head> tag. This
+    will make the JavaScript load before the rest of the page. By placing the
+    tag down here, we'll load the entire structure of the page before we load
+    the code. This is good practice so users can see something as soon as
+    possible. Depending on how much code you're loading, it might take a
+    noticeable amount of time, which is bad look. -->
+  <script type="text/javascript" src="todoapp.js"></script>
 </html>
